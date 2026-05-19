@@ -4,7 +4,7 @@ Author: Bishweswar
 Version: 1.0.0
 
 */
-@charset "utf-8";
+/* @charset "utf-8"; */
 /* CSS Document */
 
 
@@ -15,9 +15,11 @@ Version: 1.0.0
     color: #fff;
     font-weight: bold;
 }
-.center-body h1{
+
+.center-body h1 {
     color: #337ab7;
 }
+
 .wrapper {
     margin-bottom: 0;
     margin-left: auto;
@@ -30,7 +32,7 @@ Version: 1.0.0
     display: none;
 }
 
-@charset "utf-8";
+/* @charset "utf-8"; */
 
 /* CSS Document */
 
@@ -58,7 +60,7 @@ body {
 
 /*--- Bootstrap Override Css ---*/
 
-body.smartEducation {
+/* body.smartEducation {
 
     font-family: 'source_sans_proregular'
 
@@ -86,7 +88,7 @@ body.smartEducation {
 
     line-height: 160%;
 
-}
+} */
 
 .center-body {
     margin: 0 auto;
@@ -121,13 +123,18 @@ body.smartEducation {
     font-weight: 600;
     font-size: 17px;
 }
+
 .list_n li {
     color: #506a85;
+    font-size: 14px;
 }
+
 .navbar-light .navbar-nav .nav-link {
     color: #506a85;
     font-weight: bold;
+    font-size: 14px;
 }
+
 .navbar-default {
     background-color: #F8F8F8;
 }
@@ -215,12 +222,14 @@ body.smartEducation {
 }
 
 @media screen and (max-width: 767px) {
-    .list_n{
+    .list_n {
         display: none;
     }
-    .wrapper{
+
+    .wrapper {
         width: unset !important;
     }
+
     .navbar .navbar-collapse .navbar-right>li:last-child {
         padding-left: 15px;
         padding-right: 15px;
@@ -309,7 +318,7 @@ body.smartEducation {
 
 .logo-resp {
     border-radius: 4px;
-    max-width: 170px
+    max-width: 50px
 }
 
 .nav-bar-header {
@@ -348,18 +357,12 @@ body.smartEducation {
 
 .text-banner {
     position: absolute;
-
     top: 0;
-
     font-size: 18px;
-
     line-height: 35px;
-
     padding: 52px 109px 68px;
-
     text-align: justify;
     height: 100%;
-
     background: rgba(0, 0, 0, 0.08)
 }
 
@@ -390,7 +393,7 @@ body.smartEducation {
     padding: 50px 0px 20px;
     font-size: 45px;
     font-weight: 600;
-    color: #337ab7 ;
+    color: #337ab7;
 }
 
 .center-body h1 span {
@@ -456,7 +459,7 @@ body.smartEducation {
 
         text-align: center;
 
-       
+
     }
 
     .icon-lg {
@@ -575,83 +578,99 @@ body.smartEducation {
     .input-sty {
         width: 100% !important;
     }
-    .wraper{
+
+    .wraper {
         width: 100% !important;
     }
-    .center-body{
+
+    .center-body {
         width: 100% !important;
     }
-    .nav  .navbar-nav{
+
+    .nav .navbar-nav {
         text-align: center;
     }
-    .active{
+
+    .active {
         padding: 6px 12px !important;
         width: fit-content;
         text-align: center;
         margin: auto;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         text-align: center;
     }
-    .wraper{
+
+    .wraper {
         width: 100% !important;
     }
-    .services_box .container{
+
+    .services_box .container {
         width: 100% !important;
     }
-    .text-sty-cls{
+
+    .text-sty-cls {
         padding: 5px !important;
     }
-    .services_box .container ul{
+
+    .services_box .container ul {
         padding-left: 10px !important;
     }
-    .patel_details{
+
+    .patel_details {
         width: 100% !important;
     }
-    .two_ptl{
+
+    .two_ptl {
         width: 100% !important;
     }
-    .patel_details p{
+
+    .patel_details p {
         margin: 0px !important;
     }
-    .text-sty-cls .p-text{
+
+    .text-sty-cls .p-text {
         margin: 0px !important;
     }
 }
-.two_ptl{
-    float:left;
-    width:25%
+
+.two_ptl {
+    float: left;
+    width: 25%
 }
-.patel_details{
-    float:right;
-    width:75%
+
+.patel_details {
+    float: right;
+    width: 75%
 }
+
 #sidebar {
     display: none !important;
-  }
+}
 
-  .wraper {
+.wraper {
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     width: 1300px;
-  }
+}
 
-  .opporunity-sty {
+.opporunity-sty {
     margin-top: 0px !important;
-  }
+}
 
-  .header-area {
+.header-area {
     margin-top: 5px !important;
-  }
+}
 
-  .center-body h1 {
+.center-body h1 {
     padding: 0px !important;
     margin-top: 10px !important;
-  }
+}
 
-  /*
+/*
 #blink {
 font-weight: bold;
 transition: 0.01s;
@@ -661,7 +680,7 @@ text-align:center;
 font-size:25px;
 color:#337ab7;
 }*/
-  #blink {
+#blink {
     animation: blinker 2s linear infinite;
     font-weight: bold;
     transition: 0.01s;
@@ -670,13 +689,13 @@ color:#337ab7;
     text-align: center;
     font-size: 25px;
     color: #337ab7;
-  }
+}
 
-  @keyframes blinker {
+@keyframes blinker {
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
 
 /*-----------------------------------opportunity-----------------------------------------*/
 
@@ -1004,55 +1023,67 @@ color:#337ab7;
 .staff_box .container {
     width: unset;
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
     color: white;
     background: #2fbbf5;
     border-radius: 6px;
 }
-.navbar-nav>li{
+
+.navbar-nav>li {
     padding-left: 40px;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
-.navbar-nav>li a{
 
-}
-.list_n{
+.navbar-nav>li a {}
+
+.list_n {
     list-style: none;
+    margin-bottom: 0;
 }
-.center-styl p{
+
+.center-styl p {
     font-size: 16px;
     margin-top: 40px;
 }
-.nwwwe p{
+
+.nwwwe p {
     font-size: 16px;
     font-weight: 300;
     color: #656565;
     letter-spacing: 1px;
 }
-.nwwwe ul{
+
+.nwwwe ul {
     font-size: 16px;
     font-weight: 300;
     color: #656565;
     letter-spacing: 1px;
 }
-.bg_new{
+
+.bg_new {
     padding: 10px;
     background-color: #F8F8F8;
 }
-.maindoctor img{
+
+.maindoctor img {
     width: 100%;
 }
-.contaner{
+
+.contaner {
     background: #F8F8F8;
     padding: 20px;
 }
-.dfr{
+
+.dfr {
     text-align: center;
     background: #F8F8F8;
     padding: 10px;
 }
+
 /*
 Theme Name: smarteducation
 Author: Bishweswar
@@ -1070,9 +1101,11 @@ Version: 1.0.0
     color: #fff;
     font-weight: bold;
 }
-.center-body h1{
+
+.center-body h1 {
     color: #337ab7;
 }
+
 .wrapper {
     margin-bottom: 0;
     margin-left: auto;
@@ -1085,7 +1118,7 @@ Version: 1.0.0
     display: none;
 }
 
-@charset "utf-8";
+/* @charset "utf-8"; */
 
 /* CSS Document */
 
@@ -1176,13 +1209,16 @@ body.smartEducation {
     font-weight: 600;
     font-size: 17px;
 }
+
 .list_n li {
     color: #506a85;
 }
+
 .navbar-light .navbar-nav .nav-link {
     color: #506a85;
     font-weight: bold;
 }
+
 .navbar-default {
     background-color: #F8F8F8;
 }
@@ -1270,12 +1306,14 @@ body.smartEducation {
 }
 
 @media screen and (max-width: 767px) {
-    .list_n{
+    .list_n {
         display: none;
     }
-    .wrapper{
+
+    .wrapper {
         width: unset !important;
     }
+
     .navbar .navbar-collapse .navbar-right>li:last-child {
         padding-left: 15px;
         padding-right: 15px;
@@ -1364,7 +1402,7 @@ body.smartEducation {
 
 .logo-resp {
     border-radius: 4px;
-    max-width: 170px
+    max-width: 60px
 }
 
 .nav-bar-header {
@@ -1445,7 +1483,7 @@ body.smartEducation {
     padding: 50px 0px 20px;
     font-size: 45px;
     font-weight: 600;
-    color: #337ab7 ;
+    color: #337ab7;
 }
 
 .center-body h1 span {
@@ -1511,7 +1549,7 @@ body.smartEducation {
 
         text-align: center;
 
-       
+
     }
 
     .icon-lg {
@@ -1630,83 +1668,99 @@ body.smartEducation {
     .input-sty {
         width: 100% !important;
     }
-    .wraper{
+
+    .wraper {
         width: 100% !important;
     }
-    .center-body{
+
+    .center-body {
         width: 100% !important;
     }
-    .nav  .navbar-nav{
+
+    .nav .navbar-nav {
         text-align: center;
     }
-    .active{
+
+    .active {
         padding: 6px 12px !important;
         width: fit-content;
         text-align: center;
         margin: auto;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         text-align: center;
     }
-    .wraper{
+
+    .wraper {
         width: 100% !important;
     }
-    .services_box .container{
+
+    .services_box .container {
         width: 100% !important;
     }
-    .text-sty-cls{
+
+    .text-sty-cls {
         padding: 5px !important;
     }
-    .services_box .container ul{
+
+    .services_box .container ul {
         padding-left: 10px !important;
     }
-    .patel_details{
+
+    .patel_details {
         width: 100% !important;
     }
-    .two_ptl{
+
+    .two_ptl {
         width: 100% !important;
     }
-    .patel_details p{
+
+    .patel_details p {
         margin: 0px !important;
     }
-    .text-sty-cls .p-text{
+
+    .text-sty-cls .p-text {
         margin: 0px !important;
     }
 }
-.two_ptl{
-    float:left;
-    width:25%
+
+.two_ptl {
+    float: left;
+    width: 25%
 }
-.patel_details{
-    float:right;
-    width:75%
+
+.patel_details {
+    float: right;
+    width: 75%
 }
+
 #sidebar {
     display: none !important;
-  }
+}
 
-  .wraper {
+.wraper {
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     width: 1300px;
-  }
+}
 
-  .opporunity-sty {
+.opporunity-sty {
     margin-top: 0px !important;
-  }
+}
 
-  .header-area {
+.header-area {
     margin-top: 5px !important;
-  }
+}
 
-  .center-body h1 {
+.center-body h1 {
     padding: 0px !important;
     margin-top: 10px !important;
-  }
+}
 
-  /*
+/*
 #blink {
 font-weight: bold;
 transition: 0.01s;
@@ -1716,7 +1770,7 @@ text-align:center;
 font-size:25px;
 color:#337ab7;
 }*/
-  #blink {
+#blink {
     animation: blinker 2s linear infinite;
     font-weight: bold;
     transition: 0.01s;
@@ -1725,13 +1779,13 @@ color:#337ab7;
     text-align: center;
     font-size: 25px;
     color: #337ab7;
-  }
+}
 
-  @keyframes blinker {
+@keyframes blinker {
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
 
 /*-----------------------------------opportunity-----------------------------------------*/
 
@@ -2059,51 +2113,61 @@ color:#337ab7;
 .staff_box .container {
     width: unset;
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
     color: white;
     background: #2fbbf5;
     border-radius: 6px;
 }
-.navbar-nav>li{
+
+.navbar-nav>li {
     padding-left: 40px;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
-.navbar-nav>li a{
 
-}
-.list_n{
+.navbar-nav>li a {}
+
+.list_n {
     list-style: none;
 }
-.center-styl p{
+
+.center-styl p {
     font-size: 16px;
     margin-top: 40px;
 }
-.nwwwe p{
+
+.nwwwe p {
     font-size: 16px;
     font-weight: 300;
     color: #656565;
     letter-spacing: 1px;
 }
-.nwwwe ul{
+
+.nwwwe ul {
     font-size: 16px;
     font-weight: 300;
     color: #656565;
     letter-spacing: 1px;
 }
-.bg_new{
+
+.bg_new {
     padding: 10px;
     background-color: #F8F8F8;
 }
-.maindoctor img{
+
+.maindoctor img {
     width: 100%;
 }
-.contaner{
+
+.contaner {
     background: #F8F8F8;
     padding: 20px;
 }
-.dfr{
+
+.dfr {
     text-align: center;
     background: #F8F8F8;
     padding: 10px;
