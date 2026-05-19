@@ -1,0 +1,77 @@
+// components/contact/ContactSection.tsx
+
+export default function ContactSection() {
+  return (
+    <div className="center-body opporunity-sty">
+      <h1>
+        <a>
+          C<span>ONTAC</span>T
+        </a>
+      </h1>
+
+      <br />
+
+      <div className="container">
+        <div
+          className="row mar-top"
+          style={{ marginTop: "5px" }}
+        >
+          <div className="col-sm-8">
+            <div className="wp-block-group">
+              <div className="wp-block-columns">
+                <div
+                  className="wp-block-column"
+                  style={{ flexBasis: "100%" }}
+                >
+                  <div className="wp-block-columns">
+                    <div
+                      className="wp-block-column"
+                      style={{ flexBasis: "100%" }}
+                    >
+                      <div className="wp-block-group">
+                        <div className="wp-block-columns">
+                          <div
+                            className="wp-block-column"
+                            style={{ flexBasis: "100%" }}
+                          >
+                            <div className="wp-block-group"></div>
+
+                            <div style={{ textAlign: "center" }}>
+                              <p>
+                                For physicians and providers needing to
+                                make a referral, please send referrals
+                                via fax at
+                                <br />
+                                903-892-6323
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+            <br />
+          </div>
+
+          <div className="col-sm-4">
+            <div className="right-side">
+              <h3>OFFICE</h3>
+
+              <h4>
+                <p>
+                  <strong>Main Office</strong>: 555 Republic Drive,
+                  Suite 325, Plano, TX 75074&nbsp; Ph: 903-893-0298
+                </p>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
