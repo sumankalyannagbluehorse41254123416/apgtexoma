@@ -133,6 +133,7 @@ body {
     color: #506a85;
     font-weight: bold;
     font-size: 14px;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar-default {
@@ -338,7 +339,7 @@ body {
 }
 
 .banner {
-    margin-top: 20px;
+    margin-top: 0px;
     position: relative;
 }
 
@@ -346,6 +347,7 @@ body {
     height: 350px;
     width: 100%;
 }
+
 
 .banner-img {
     width: 100%;
@@ -1090,7 +1092,7 @@ Author: Bishweswar
 Version: 1.0.0
 
 */
-@charset "utf-8";
+/* @charset "utf-8"; */
 /* CSS Document */
 
 
@@ -1179,6 +1181,10 @@ body.smartEducation {
 .center-body {
     margin: 0 auto;
     width: 1300px;
+}
+
+.top-gap {
+    margin-top: 30px;
 }
 
 .current_page_item {
@@ -1422,13 +1428,19 @@ body.smartEducation {
 }
 
 .banner {
-    margin-top: 20px;
+    margin-top: 0px;
     position: relative;
 }
 
 .banner-sty {
     height: 350px;
     width: 100%;
+}
+
+@media (max-width:768px) {
+    .banner-sty {
+        height: 300px;
+    }
 }
 
 .banner-img {
@@ -1441,19 +1453,16 @@ body.smartEducation {
 
 .text-banner {
     position: absolute;
-
-    top: 0;
-
+    top: 10px;
     font-size: 18px;
-
     line-height: 35px;
-
     padding: 52px 109px 68px;
-
     text-align: justify;
     height: 100%;
-
-    background: rgba(0, 0, 0, 0.08)
+    background: rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .text-banner h3 {
@@ -1462,6 +1471,7 @@ body.smartEducation {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    margin-top: 10px;
 }
 
 .text-banner p {
@@ -1472,6 +1482,8 @@ body.smartEducation {
     padding-bottom: 10px;
     text-align: center !important;
 }
+
+
 
 .banner-img {
     border-bottom: 5px solid #2fbbf5;
@@ -1512,7 +1524,7 @@ body.smartEducation {
 .footer {
     background: #131c25;
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 50px;
     border-top: 5px solid #2fbbf5;
     text-align: center;
     font-weight: 600;
@@ -1722,6 +1734,16 @@ body.smartEducation {
 
     .text-sty-cls .p-text {
         margin: 0px !important;
+    }
+}
+
+@media (max-width:575px) {
+    .text-banner p {
+        padding: 5px;
+    }
+
+    .text-banner h3 {
+        font-size: 20px;
     }
 }
 
@@ -2116,9 +2138,12 @@ color:#337ab7;
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: white;
-    background: #2fbbf5;
+    /* color: white; */
+    color: #2fbbf5;
+    background: transparent;
     border-radius: 6px;
+    box-shadow: none;
+    border: none;
 }
 
 .navbar-nav>li {
