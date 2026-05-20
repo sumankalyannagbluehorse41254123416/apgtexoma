@@ -2,17 +2,20 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <header className="container-fluid main_top_header wraper">
+    <header className="bg-light main_top_header">
       <div className="t_hrader">
         {/* Your header content goes here */}
       </div>
 
       <div className="icon-social icon-lg"></div>
 
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="bg-light navbar navbar-expand-lg navbar-light wraper container-fluid navbar navbar-expand-lg navbar-light wraper container-fluid">
         <Link href="/apg">
           <Image
             src="/images/rsz_275587-3-03.png"
@@ -27,16 +30,16 @@ export default function Header() {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => setOpen(!open)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div
+          className={`collapse navbar-collapse ${open ? "show" : ""}`}
+          id="navbarNavAltMarkup"
+        >
           <div className="navbar-nav ms-auto" id="topManu">
             <ul className="nav navbar-nav">
               <li>
