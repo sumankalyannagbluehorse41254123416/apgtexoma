@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
 
   images: {
-    domains: ["apgtexoma.com"],
+    domains: ["apgtexoma.com", "ik.imagekit.io"],
   },
 };
 
