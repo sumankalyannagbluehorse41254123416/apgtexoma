@@ -15,7 +15,7 @@ export default function Header() {
 
       <div className="icon-social icon-lg"></div>
 
-      <nav className="navbar navbar-expand-lg navbar-light wraper container-fluid">
+      <nav className="bg-light navbar navbar-expand-lg navbar-light wraper container-fluid navbar navbar-expand-lg navbar-light wraper container-fluid">
         <Link href="/apg">
           <Image
             src="/images/rsz_275587-3-03.png"
