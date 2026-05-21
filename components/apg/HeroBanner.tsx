@@ -14,7 +14,7 @@ export default function HeroBanner({
   image,
 }: HeroBannerProps) {
   return (
-    <div className="wraper">
+    <div className="">
       <div className="container">
         <div className="header-area">
           <div className="icon-hide">
