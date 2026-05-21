@@ -1,6 +1,32 @@
+// components/resources/ResorceBanner.tsx
+
 import Image from "next/image";
 
-export default function ResorceBanner() {
+interface Props {
+  title?: string;
+  shortDescription?: string;
+  image?: string;
+}
+
+export default function ResorceBanner({
+  title,
+  shortDescription,
+  image,
+}: Props) {
+
+  // ✅ remove html tags
+  const cleanText = (text?: string) => {
+    if (!text) return "";
+
+    return text
+      .replace(/<br\s*\/?>/gi, "")
+      .replace(/&nbsp;/gi, "")
+      .replace(/<\/?ul>/gi, "")
+      .replace(/<\/?li>/gi, "")
+      .replace(/<[^>]*>/g, "")
+      .trim();
+  };
+
   return (
     <div className="">
       <div className="container">
@@ -24,31 +50,29 @@ export default function ResorceBanner() {
       <div className="clearfix"></div>
 
       <div className="banner">
+
+        {/* ✅ Dynamic Image */}
         <div className="banner-img">
           <Image
-            src="/images/img-banner.png"
-            alt="APG Banner"
+            src={image || "/images/img-banner.png"}
+            alt={cleanText(title) || "Banner"}
             width={700}
             height={500}
             className="banner-sty"
           />
         </div>
 
+        {/* ✅ Dynamic Content */}
         <div className="text-banner">
           <h3>
-            Applied <span>Psychology</span> Group of Texoma
+            {cleanText(title)}
           </h3>
 
           <p>
-            APG is a comprehensive mental health clinic serving North Texas and
-            Southern Oklahoma. We provide state-of-the-art treatment and
-            evaluation services for children, adolescents, adults, and families.
-            By combining the experience of seasoned professionals with the most
-            recent knowledge and proven techniques available, APG of Texoma
-            strives to provide the highest quality mental health services
-            possible for its patients.
+            {cleanText(shortDescription)}
           </p>
         </div>
+
       </div>
     </div>
   );
