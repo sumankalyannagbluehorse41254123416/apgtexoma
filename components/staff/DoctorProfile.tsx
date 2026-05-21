@@ -1,9 +1,40 @@
+// components/staff/DoctorProfile.tsx
+
 import Image from "next/image";
 
-export default function DoctorProfile() {
+interface Section {
+  title?: string;
+  shortDescription?: string;
+  description?: string;
+  image?: string;
+  subsections?: Section[];
+}
+
+interface Props {
+  section?: Section;
+}
+
+export default function DoctorProfile({
+  section,
+}: Props) {
+
+  // ✅ remove html tags
+  const cleanText = (text?: string) => {
+    if (!text) return "";
+
+    return text
+      .replace(/<br\s*\/?>/gi, "")
+      .replace(/&nbsp;/gi, "")
+      .replace(/<\/?ul>/gi, "")
+      .replace(/<\/?li>/gi, "")
+      .replace(/<[^>]*>/g, "")
+      .trim();
+  };
+
   return (
     <>
       <div className="center-body opporunity-sty">
+
         <h1>
           <a>
             PROFE<span>SSIONAL</span> STAFF
@@ -19,7 +50,10 @@ export default function DoctorProfile() {
 
             <div
               className="row"
-              style={{ marginLeft: "0px", marginRight: "0px" }}
+              style={{
+                marginLeft: "0px",
+                marginRight: "0px",
+              }}
             >
               <div className="col-lg-3 col-md-3">
 
@@ -32,17 +66,61 @@ export default function DoctorProfile() {
                     height={415}
                   />
 
-                  <p
-                  className="patel-name"
-                    style={{
-                      
-                      fontWeight: "600",
-                      marginTop: "15px",
-                      marginBottom: "5px",
-                    }}
-                  >
-                    Purvi Patel, PsyD, LP
-                  </p>
+                  <div className="two_ptl">
+
+                    {/* ✅ Dynamic Image */}
+                    <Image
+                      className="maindoctor"
+                      src={
+                        section?.image ||
+                        "/images/IMG_3683.jpeg"
+                      }
+                      alt={
+                        cleanText(section?.title) ||
+                        "Doctor"
+                      }
+                      width={311}
+                      height={415}
+                    />
+
+                    {/* ✅ Dynamic Title */}
+                    <p className="patel-name"
+                      style={{
+                        
+                        fontWeight: "600",
+                        marginTop: "15px",
+                        marginBottom: "5px",
+                      }}
+                    >
+                      {cleanText(section?.title)}
+                    </p>
+
+                    {/* ✅ Dynamic Short Description */}
+                    <p className="p-text">
+                      {cleanText(
+                        section?.shortDescription,
+                      )}
+                    </p>
+
+                  </div>
+
+                  {/* ✅ Dynamic Subsection Description */}
+                  <div className="patel_details">
+
+                    {section?.subsections?.map(
+                      (item, index) => (
+                        <p key={index}>
+                          {cleanText(
+                            item?.description,
+                          )}
+
+                          <br />
+                          <br />
+                        </p>
+                      ),
+                    )}
+
+                  </div>
 
                   <p className="p-designation">
                     Licensed Clinical Neuropsychologist
