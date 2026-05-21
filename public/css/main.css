@@ -371,7 +371,7 @@ body.smartEducation {
 .footer {
     background: #131c25;
     padding: 20px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     border-top: 5px solid #2fbbf5;
     text-align: center;
     font-weight: 600;
