@@ -1,11 +1,41 @@
+// components/privacypolicy/PrivacyBanner.tsx
+
 import Image from "next/image";
 
-export default function PrivacyBanner() {
+interface Props {
+  title?: string;
+  shortDescription?: string;
+  image?: string;
+}
+
+export default function PrivacyBanner({
+  title,
+  shortDescription,
+  image,
+}: Props) {
+
+  // ✅ remove html
+  const cleanText = (text?: string) => {
+    if (!text) return "";
+
+    return text
+      .replace(/<br\s*\/?>/gi, "")
+      .replace(/&nbsp;/gi, "")
+      .replace(/<\/?ul>/gi, "")
+      .replace(/<\/?li>/gi, "")
+      .replace(/<[^>]*>/g, "")
+      .trim();
+  };
+
   return (
     <div className="wraper">
+
       <div className="container">
+
         <div className="header-area">
+
           <div className="icon-hide">
+
             <div className="icon-social">
               <ul></ul>
             </div>
@@ -17,38 +47,49 @@ export default function PrivacyBanner() {
             <div className="icon-social"></div>
 
             <p></p>
+
           </div>
+
         </div>
+
       </div>
 
       <div className="clearfix"></div>
 
       <div className="banner">
+
+        {/* ✅ Dynamic Image */}
         <div className="banner-img">
+
           <Image
-            src="/images/img-banner.png"
-            alt="APG Banner"
+            src={
+              image || "/images/img-banner.png"
+            }
+            alt={
+              cleanText(title) || "Banner"
+            }
             width={700}
             height={500}
             className="banner-sty"
           />
+
         </div>
 
+        {/* ✅ Dynamic Content */}
         <div className="text-banner">
+
+          {/* ✅ section title */}
           <h3>
-            Applied <span>Psychology</span> Group of Texoma
+            {cleanText(title)}
           </h3>
 
+          {/* ✅ section shortdescription */}
           <p>
-            APG is a comprehensive mental health clinic serving North Texas and
-            Southern Oklahoma. We provide state-of-the-art treatment and
-            evaluation services for children, adolescents, adults, and families.
-            By combining the experience of seasoned professionals with the most
-            recent knowledge and proven techniques available, APG of Texoma
-            strives to provide the highest quality mental health services
-            possible for its patients.
+            {cleanText(shortDescription)}
           </p>
+
         </div>
+
       </div>
     </div>
   );
