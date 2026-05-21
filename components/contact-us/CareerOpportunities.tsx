@@ -11,7 +11,7 @@ export default function CareerOpportunities() {
 
       <br />
 
-      <div className="conter dfr">
+      <div className="container dfr">
         <div className="row mar-top">
           <div
             className="col-sm-12"

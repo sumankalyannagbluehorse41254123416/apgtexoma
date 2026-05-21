@@ -164,10 +164,10 @@ Ms. Qayyum has extensive practice working with families and children from variou
               {staffMembers.map((member) => (
                 <div
                   className="col-sm-3"
-                  style={{ paddingBottom: "15px" }}
+                  style={{ paddingBottom: "30px" }}
                   key={member.id}
                 >
-                  <div className="img-section">
+                  <div className="img-section staff_img">
                     <Image
                       src={member.image}
                       alt={member.name}
@@ -192,6 +192,7 @@ Ms. Qayyum has extensive practice working with families and children from variou
                         width: "104.58px",
                         height: "33.6px",
                         padding: "0",
+                        borderRadius:"10px"
                       }}
                     >
                       READ MORE

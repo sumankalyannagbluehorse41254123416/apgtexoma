@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ServiceBanner() {
   return (
-    <div className="wraper">
+    <div className="">
       <div className="container">
         <div className="header-area">
           <div className="icon-hide">

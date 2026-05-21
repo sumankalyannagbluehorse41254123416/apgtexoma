@@ -1,6 +1,6 @@
 export default function MissionStatement() {
   return (
-    <div className="center-body center-styl">
+    <div className="center-body center-styl top-gap">
       <h1>
         <a href="#">
           MISSIO<span>N STA</span>TEMENT
