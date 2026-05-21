@@ -796,6 +796,13 @@ color:#337ab7;
     font-size: 12px;
     padding: 0px 10px;
 }
+.img-section.staff_img p {
+    text-align: center;
+    font-size: 12px;
+    padding: 0px 10px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
 
 .img-section h5 {
     text-align: center;
@@ -1020,6 +1027,7 @@ color:#337ab7;
 } */
 .staff_box {
     background-color: #F8F8F8;
+    padding: 20px 0;
 }
 
 .staff_box .container {
@@ -1747,6 +1755,37 @@ body.smartEducation {
     }
 }
 
+.contact_us .right-side p {
+    margin: 0;
+    padding: 0 !important;
+    text-align: left;
+}
+
+.contact_us .wp-block-group .wp-block-columns p {
+    padding: 0 !important;
+    text-align: left;
+}
+
+@media (max-width:768px) {
+
+    .contact_us .wp-block-group .wp-block-columns p,
+    .contact_us .right-side p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width:575px) {
+
+    .contact_us .col-lg-8,
+    .contact_us  .col-lg-4 {
+        height: 95px;
+    }
+    .contact_us .wp-block-column p{
+        margin: 15px 20px 10px;
+    }
+}
+
 .two_ptl {
     float: left;
     width: 25%
@@ -1868,7 +1907,7 @@ color:#337ab7;
 /*--------------------stuff-----------------------------------*/
 
 .opporunity-sty {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .text-sty-cls h4 {
@@ -1899,6 +1938,12 @@ color:#337ab7;
 .bottom-img-sce h4 {
     font-weight: bold;
     color: #484848;
+}
+.staff_box .bottom-img-sce h4 {
+    font-weight: bold;
+    color: #484848;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .img-section p {
@@ -2090,7 +2135,16 @@ color:#337ab7;
     margin-right: auto;
     display: block;
 }
-
+.img-section.staff_img img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    object-position: center 1%; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 .taglinehome {
     font-size: 22px;
     text-decoration: none;

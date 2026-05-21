@@ -2,7 +2,7 @@
 
 export default function ContactSection() {
   return (
-    <div className="center-body opporunity-sty">
+    <div className="center-body opporunity-sty contact_us">
       <h1>
         <a>
           C<span>ONTAC</span>T
@@ -16,40 +16,20 @@ export default function ContactSection() {
           className="row mar-top"
           style={{ marginTop: "5px" }}
         >
-          <div className="col-sm-8">
+          <div className="col-lg-8 col-md-8 col-sm-7">
             <div className="wp-block-group">
               <div className="wp-block-columns">
                 <div
                   className="wp-block-column"
-                  style={{ flexBasis: "100%" }}
+                  style={{ flexBasis: "100%", textAlign: "left" }}
                 >
-                  <div className="wp-block-columns">
-                    <div
-                      className="wp-block-column"
-                      style={{ flexBasis: "100%" }}
-                    >
-                      <div className="wp-block-group">
-                        <div className="wp-block-columns">
-                          <div
-                            className="wp-block-column"
-                            style={{ flexBasis: "100%" }}
-                          >
-                            <div className="wp-block-group"></div>
-
-                            <div style={{ textAlign: "center" }}>
-                              <p>
-                                For physicians and providers needing to
-                                make a referral, please send referrals
-                                via fax at
-                                <br />
-                                903-892-6323
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <p>
+                    For physicians and providers needing to
+                    make a referral, please send referrals
+                    via fax at
+                    <br />
+                    903-892-6323
+                  </p>
                 </div>
               </div>
             </div>
@@ -58,7 +38,7 @@ export default function ContactSection() {
             <br />
           </div>
 
-          <div className="col-sm-4">
+          <div className="col-lg-4 col-md-4 col-sm-5">
             <div className="right-side">
               <h3>OFFICE</h3>
 

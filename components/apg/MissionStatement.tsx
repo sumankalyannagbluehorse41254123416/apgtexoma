@@ -10,7 +10,7 @@ export default function MissionStatement({
   shortDescription,
 }: MissionStatementProps) {
   return (
-    <div className="center-body center-styl">
+    <div className="center-body center-styl top-gap">
       <h1>
         {title}
       </h1>
