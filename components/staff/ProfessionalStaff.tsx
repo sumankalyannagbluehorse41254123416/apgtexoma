@@ -163,7 +163,7 @@ Ms. Qayyum has extensive practice working with families and children from variou
             <div className="row section group">
               {staffMembers.map((member) => (
                 <div
-                  className="col-sm-3"
+                  className="col-lg-3 col-md-4 col-sm-4"
                   style={{ paddingBottom: "30px" }}
                   key={member.id}
                 >
