@@ -1,19 +1,21 @@
-export default function MissionStatement() {
+// components/apg/MissionStatement.tsx
+
+interface MissionStatementProps {
+  title: string;
+  shortDescription: string;
+}
+
+export default function MissionStatement({
+  title,
+  shortDescription,
+}: MissionStatementProps) {
   return (
     <div className="center-body center-styl">
       <h1>
-        <a href="#">
-          MISSIO<span>N STA</span>TEMENT
-        </a>
+        {title}
       </h1>
 
-      <p>
-        We strive to provide the highest level of professional services to our
-        patients with the respect and compassion necessary to create a
-        comfortable collaboration. Our ultimate goal is to enhance the lives of
-        our patients by evaluating their unique characteristics and developing a
-        treatment plan to fit each person’s needs.
-      </p>
+      <p>{shortDescription}</p>
     </div>
   );
 }
