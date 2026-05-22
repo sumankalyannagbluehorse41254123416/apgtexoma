@@ -999,6 +999,7 @@ color:#337ab7;
 
 .services_box {
     background-color: #f8f8f8;
+    padding: 25px 0;
 }
 
 .service_banner {
@@ -1013,13 +1014,31 @@ color:#337ab7;
 }
 
 .services_box .container p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.7;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+@media (max-width:768px) {
+    .services_box .container p {
+        font-size: 16px;
+    }
 }
 
 .services_box .container ul li {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.7;
+}
+
+@media (max-width:768px) {
+    .services_box .container ul li {
+        font-size: 16px;
+    }
+}
+
+.services_box .container ul {
+    margin: 0 0 15px;
 }
 
 /* .opporunity-sty .container{
@@ -2266,15 +2285,8 @@ color:#337ab7;
     width: 1550px;
 }
 
-.services_box .container p {
-    font-size: 16px;
-    line-height: 1.7;
-}
 
-.services_box .container ul li {
-    font-size: 16px;
-    line-height: 1.7;
-}
+
 
 /* .opporunity-sty .container{
     width: 1530px;
@@ -2349,17 +2361,59 @@ color:#337ab7;
     background: #F8F8F8;
     padding: 10px;
 }
-.resources_page .heading-Lft h3{
+
+.resources_page .heading-Lft h3 {
     font-size: 22px;
+    text-align: left;
+    margin-bottom: 20px;
 }
+
+@media (max-width:768px) {
+    .resources_page .heading-Lft h3 {
+        font-size: 20px;
+    }
+}
+
 .resources_page .bg_new {
     padding: 25px 0;
 }
-.resources_page .left-list-sty ul li a{
- font-size: 18px;
+
+@media (max-width:768px) {
+    .resources_page .left-list-sty ul li a {
+        font-size: 16px !important;
+    }
+
+    .resources_page .left-list-sty ul li {
+        padding: 4px 0 !important;
+    }
+}
+
+.resources_page .left-list-sty ul li a {
+    font-size: 18px;
+}
+
+.resources_page .center-body h1 {
+    border-bottom: 5px solid #4acaff;
+    padding-bottom: 2px;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 20px;
 }
 
 .resources_page .left-list-sty ul li {
     font-size: 18px;
     padding: 8px 0;
+}
+
+.services_box .text-sty-cls h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+@media (max-width:768px) {
+    .services_box .text-sty-cls h4 {
+        font-size: 18px;
+    }
 }
