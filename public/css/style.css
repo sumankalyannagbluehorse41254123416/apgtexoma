@@ -2417,3 +2417,22 @@ color:#337ab7;
         font-size: 18px;
     }
 }
+
+.apg_content h1{
+    border-bottom: 5px solid #4acaff;
+    width: fit-content;
+    display: flex;
+    margin: 0 auto 20px;
+}
+.apg_content{
+    padding: 30px 0 0;
+}
+.apg_content p{
+    margin: 0;
+    font-size: 18px;
+}
+@media (max-width:768px){
+    .apg_content p{
+        font-size: 16px;
+    }
+}
