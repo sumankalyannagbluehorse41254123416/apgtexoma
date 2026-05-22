@@ -1076,7 +1076,7 @@ color:#337ab7;
 }
 
 .bg_new {
-    padding: 10px;
+
     background-color: #F8F8F8;
 }
 
@@ -1810,9 +1810,11 @@ body.smartEducation {
         font-size: 14px;
     }
 }
-.p-designation{
-    font-size:16px;
+
+.p-designation {
+    font-size: 16px;
 }
+
 @media (max-width:768px) {
     .p-designation {
         font-size: 14px;
@@ -2329,7 +2331,7 @@ color:#337ab7;
 }
 
 .bg_new {
-    padding: 10px;
+
     background-color: #F8F8F8;
 }
 
@@ -2346,4 +2348,18 @@ color:#337ab7;
     text-align: center;
     background: #F8F8F8;
     padding: 10px;
+}
+.resources_page .heading-Lft h3{
+    font-size: 22px;
+}
+.resources_page .bg_new {
+    padding: 25px 0;
+}
+.resources_page .left-list-sty ul li a{
+ font-size: 18px;
+}
+
+.resources_page .left-list-sty ul li {
+    font-size: 18px;
+    padding: 8px 0;
 }

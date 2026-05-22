@@ -29,56 +29,59 @@ export default function ResourcesSection({
   };
 
   return (
-    <div className="center-body opporunity-sty">
-
-      {/* ✅ Dynamic H1 */}
-      <h1>
-        <a>
-          {cleanText(section?.title)}
-        </a>
-      </h1>
-
+    <div className="resources_page">
+      <div className="center-body opporunity-sty">
+        {/* ✅ Dynamic H1 */}
+        <h1>
+          <a>
+            {cleanText(section?.title)}
+          </a>
+        </h1>
+      </div>
       <div className="bg_new">
-        <div className="row">
 
-          <div className="col-sm-6 heading-Lft">
+        <div className=" container">
+          <div className="row">
 
-            {/* ✅ Dynamic H3 */}
-            <h3>
-              {cleanText(
-                section?.shortDescription,
-              )}
-            </h3>
+            <div className="col-sm-12 heading-Lft">
 
-            <div className="left-list-sty">
-              <ul>
-
-                {/* ✅ Dynamic LI */}
-                {section?.subsections?.map(
-                  (item, index) => (
-                    <li key={index}>
-                      <a
-                        href={
-                          cleanText(
-                            item?.description,
-                          ) || "#"
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {cleanText(item?.title)}
-                      </a>
-                    </li>
-                  ),
+              {/* ✅ Dynamic H3 */}
+              <h3>
+                {cleanText(
+                  section?.shortDescription,
                 )}
+              </h3>
 
-              </ul>
+              <div className="left-list-sty">
+                <ul>
+
+                  {/* ✅ Dynamic LI */}
+                  {section?.subsections?.map(
+                    (item, index) => (
+                      <li key={index}>
+                        <a
+                          href={
+                            cleanText(
+                              item?.description,
+                            ) || "#"
+                          }
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {cleanText(item?.title)}
+                        </a>
+                      </li>
+                    ),
+                  )}
+
+                </ul>
+              </div>
+
             </div>
 
+            {/* <div className="col-sm-6"></div> */}
+
           </div>
-
-          <div className="col-sm-6"></div>
-
         </div>
       </div>
     </div>
