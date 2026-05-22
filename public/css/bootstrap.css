@@ -4392,11 +4392,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-nav > li {
     float: left;
+    
   }
   .navbar-nav > li > a {
     padding-top: 14px;
     padding-bottom: 13px;
     border-radius: 4px;
+  }
+  
+}
+
+@media (max-width:768px){
+  .navbar-nav > li{
+    padding-left: 0 !important;
   }
 }
 .navbar-form {
