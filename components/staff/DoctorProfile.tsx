@@ -55,71 +55,68 @@ export default function DoctorProfile({
                 marginRight: "0px",
               }}
             >
-              <div className="col-sm-12">
+              <div className="col-lg-3 col-md-3">
 
-                <div
-                  className="text-sty-cls"
-                  style={{ padding: "20px" }}
-                >
+                <div className="two_ptl">
 
-                  <div className="two_ptl">
 
-                    {/* ✅ Dynamic Image */}
-                    <Image
-                      className="maindoctor"
-                      src={
-                        section?.image ||
-                        "/images/IMG_3683.jpeg"
-                      }
-                      alt={
-                        cleanText(section?.title) ||
-                        "Doctor"
-                      }
-                      width={311}
-                      height={415}
-                    />
 
-                    {/* ✅ Dynamic Title */}
-                    <p
-                      style={{
-                        fontSize: "22px",
-                        fontWeight: "600",
-                        marginTop: "15px",
-                        marginBottom: "5px",
-                      }}
-                    >
-                      {cleanText(section?.title)}
-                    </p>
 
-                    {/* ✅ Dynamic Short Description */}
-                    <p className="p-text">
-                      {cleanText(
-                        section?.shortDescription,
-                      )}
-                    </p>
+                  {/* ✅ Dynamic Image */}
+                  <Image
+                    className="maindoctor"
+                    src={
+                      section?.image ||
+                      "/images/IMG_3683.jpeg"
+                    }
+                    alt={
+                      cleanText(section?.title) ||
+                      "Doctor"
+                    }
+                    width={311}
+                    height={415}
+                  />
 
-                  </div>
+                  {/* ✅ Dynamic Title */}
+                  <p className="patel-name"
+                    style={{
 
-                  {/* ✅ Dynamic Subsection Description */}
-                  <div className="patel_details">
+                      fontWeight: "600",
+                      marginTop: "15px",
+                      marginBottom: "5px",
+                    }}
+                  >
+                    {cleanText(section?.title)}
+                  </p>
 
-                    {section?.subsections?.map(
-                      (item, index) => (
-                        <p key={index}>
-                          {cleanText(
-                            item?.description,
-                          )}
-
-                          <br />
-                          <br />
-                        </p>
-                      ),
+                  {/* ✅ Dynamic Short Description */}
+                  <p className="p-text p-designation">
+                    {cleanText(
+                      section?.shortDescription,
                     )}
-
-                  </div>
+                  </p>
 
                 </div>
 
+              </div>
+              <div className="col-lg-9 col-md-9">
+                {/* ✅ Dynamic Subsection Description */}
+                <div className="patel_details">
+
+                  {section?.subsections?.map(
+                    (item, index) => (
+                      <p key={index}>
+                        {cleanText(
+                          item?.description,
+                        )}
+
+                        <br />
+                        <br />
+                      </p>
+                    ),
+                  )}
+
+                </div>
               </div>
             </div>
 

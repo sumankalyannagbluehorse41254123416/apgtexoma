@@ -424,7 +424,7 @@ body {
 .footer {
     background: #131c25;
     padding: 20px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     border-top: 5px solid #2fbbf5;
     text-align: center;
     font-weight: 600;
@@ -638,13 +638,13 @@ body {
 }
 
 .two_ptl {
-    float: left;
-    width: 25%
+    /* float: left; */
+    width: 100%
 }
 
 .patel_details {
-    float: right;
-    width: 75%
+    /* float: right; */
+    width: 100%
 }
 
 #sidebar {
@@ -796,6 +796,7 @@ color:#337ab7;
     font-size: 12px;
     padding: 0px 10px;
 }
+
 .img-section.staff_img p {
     text-align: center;
     font-size: 12px;
@@ -998,6 +999,7 @@ color:#337ab7;
 
 .services_box {
     background-color: #f8f8f8;
+    padding: 25px 0;
 }
 
 .service_banner {
@@ -1012,13 +1014,31 @@ color:#337ab7;
 }
 
 .services_box .container p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.7;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+@media (max-width:768px) {
+    .services_box .container p {
+        font-size: 16px;
+    }
 }
 
 .services_box .container ul li {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.7;
+}
+
+@media (max-width:768px) {
+    .services_box .container ul li {
+        font-size: 16px;
+    }
+}
+
+.services_box .container ul {
+    margin: 0 0 15px;
 }
 
 /* .opporunity-sty .container{
@@ -1075,7 +1095,7 @@ color:#337ab7;
 }
 
 .bg_new {
-    padding: 10px;
+
     background-color: #F8F8F8;
 }
 
@@ -1532,7 +1552,7 @@ body.smartEducation {
 .footer {
     background: #131c25;
     padding: 20px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     border-top: 5px solid #2fbbf5;
     text-align: center;
     font-weight: 600;
@@ -1778,22 +1798,67 @@ body.smartEducation {
 @media (max-width:575px) {
 
     .contact_us .col-lg-8,
-    .contact_us  .col-lg-4 {
+    .contact_us .col-lg-4 {
         height: 95px;
     }
-    .contact_us .wp-block-column p{
+
+    .contact_us .wp-block-column p {
         margin: 15px 20px 10px;
     }
 }
 
 .two_ptl {
-    float: left;
-    width: 25%
+    /* float: left; */
+    width: 100%
+}
+
+.two_ptl img {
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.patel_details p {
+    font-size: 16px;
+}
+
+@media (max-width:768px) {
+    .patel_details p {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+.p-designation {
+    font-size: 16px;
+}
+
+@media (max-width:768px) {
+    .p-designation {
+        font-size: 14px;
+    }
+}
+
+.patel-name {
+    font-size: 22px;
+}
+
+@media (max-width:768px) {
+    .patel-name {
+        font-size: 18px;
+    }
+}
+
+.two_ptl p {
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .patel_details {
-    float: right;
-    width: 75%
+    /* float: right; */
+    width: 100%
 }
 
 #sidebar {
@@ -1939,6 +2004,50 @@ color:#337ab7;
     font-weight: bold;
     color: #484848;
 }
+
+.privacy_policy_content {
+    background: #f8f8f8;
+    padding: 30px 0;
+}
+
+.privacy_policy_content p {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.privacy_policy_content .right-bar {
+    padding: 0;
+}
+
+.privacy_policy_content h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+
+@media (max-width:768px) {
+    .privacy_policy_content h2 {
+        font-size: 18px;
+    }
+}
+
+.privacy_policy_content h4,
+.privacy_policy_content p,
+.privacy_policy_content ul li {
+    font-size: 15.5px;
+    line-height: 25px;
+}
+
+@media (max-width:768px) {
+
+    .privacy_policy_content h4,
+    .privacy_policy_content p,
+    .privacy_policy_content ul li {
+        font-size: 13.5px;
+        line-height: 23px;
+    }
+}
+
 .staff_box .bottom-img-sce h4 {
     font-weight: bold;
     color: #484848;
@@ -2135,16 +2244,24 @@ color:#337ab7;
     margin-right: auto;
     display: block;
 }
+
 .img-section.staff_img img {
     margin-left: auto;
     margin-right: auto;
     display: block;
     object-fit: cover;
     width: 100%;
-    object-position: center 1%; 
+    object-position: center 1%;
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
+@media (max-width:1366px) {
+    .img-section.staff_img img {
+        margin: 0 5px 20px 6px;
+    }
+}
+
 .taglinehome {
     font-size: 22px;
     text-decoration: none;
@@ -2168,15 +2285,8 @@ color:#337ab7;
     width: 1550px;
 }
 
-.services_box .container p {
-    font-size: 16px;
-    line-height: 1.7;
-}
 
-.services_box .container ul li {
-    font-size: 16px;
-    line-height: 1.7;
-}
+
 
 /* .opporunity-sty .container{
     width: 1530px;
@@ -2233,7 +2343,7 @@ color:#337ab7;
 }
 
 .bg_new {
-    padding: 10px;
+
     background-color: #F8F8F8;
 }
 
@@ -2250,4 +2360,83 @@ color:#337ab7;
     text-align: center;
     background: #F8F8F8;
     padding: 10px;
+}
+
+.resources_page .heading-Lft h3 {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+@media (max-width:768px) {
+    .resources_page .heading-Lft h3 {
+        font-size: 20px;
+    }
+}
+
+.resources_page .bg_new {
+    padding: 25px 0;
+}
+
+@media (max-width:768px) {
+    .resources_page .left-list-sty ul li a {
+        font-size: 16px !important;
+    }
+
+    .resources_page .left-list-sty ul li {
+        padding: 4px 0 !important;
+    }
+}
+
+.resources_page .left-list-sty ul li a {
+    font-size: 18px;
+}
+
+.resources_page .center-body h1 {
+    border-bottom: 5px solid #4acaff;
+    padding-bottom: 2px;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 20px;
+}
+
+.resources_page .left-list-sty ul li {
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.services_box .text-sty-cls h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+@media (max-width:768px) {
+    .services_box .text-sty-cls h4 {
+        font-size: 18px;
+    }
+}
+
+.apg_content h1{
+    border-bottom: 5px solid #4acaff;
+    width: fit-content;
+    display: flex;
+    margin: 0 auto 20px;
+}
+.apg_content{
+    padding: 30px 0 0;
+}
+.apg_content p{
+    margin: 0;
+    font-size: 18px;
+}
+@media (max-width:768px){
+    .apg_content p{
+        font-size: 16px;
+    }
+}
+
+.bg-light.main_top_header{
+    overflow-x: hidden;
 }

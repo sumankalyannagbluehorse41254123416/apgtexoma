@@ -41,11 +41,11 @@ export default function NeuropsychologicalContent({
       </div>
 
       <div className="services_box">
-        <div className="wraper">
+        <div className="container">
           <div className="row">
             <div
               className="col-sm-12"
-              style={{ textAlign: "justify" }}
+              style={{ textAlign: "justify", marginTop:"0" }}
             >
               <div className="text-sty-cls nwwwe">
 

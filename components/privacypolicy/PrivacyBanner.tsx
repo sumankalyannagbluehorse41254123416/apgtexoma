@@ -28,7 +28,7 @@ export default function PrivacyBanner({
   };
 
   return (
-    <div className="wraper">
+    <div className="">
 
       <div className="container">
 

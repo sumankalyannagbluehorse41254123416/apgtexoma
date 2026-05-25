@@ -97,10 +97,8 @@ export default function ProfessionalStaff({
 
               {staffMembers.map((member) => (
                 <div
-                  className="col-sm-3"
-                  style={{
-                    paddingBottom: "30px",
-                  }}
+                  className="col-lg-3 col-md-4 col-sm-4"
+                  style={{ paddingBottom: "30px" }}
                   key={member.id}
                 >
 
