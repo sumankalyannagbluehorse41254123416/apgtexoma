@@ -67,7 +67,9 @@ export default async function PrivacyPolicyPage() {
         image={sections[0]?.image || ""}
       />
 
-      <PrivacyPolicyContaintPage />
+    <PrivacyPolicyContaintPage
+        sections={sections}
+      />
     </>
   );
 }
