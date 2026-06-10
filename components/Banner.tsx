@@ -1,5 +1,3 @@
-// components/Banner.tsx
-
 import Image from "next/image";
 
 interface BannerProps {
@@ -15,39 +13,28 @@ export default function Banner({
 }: BannerProps) {
   return (
     <div className="wraper">
-      <div className="container">
-        <div className="header-area">
-          <div className="icon-hide">
-            <div className="icon-social">
-              <ul></ul>
-            </div>
-
-            <div className="clearfix"></div>
-
-            <p></p>
-
-            <div className="icon-social"></div>
-
-            <p></p>
-          </div>
-        </div>
-      </div>
+      <div className="container"></div>
 
       <div className="clearfix"></div>
 
       <div className="banner">
         <div className="banner-img">
           <Image
-            src={image || "/images/img-banner.png"}
-            alt={title || "Banner"}
+            src={image || "/images/2017/01/img-banner.png"}
+            alt={title}
             width={700}
             height={500}
             className="banner-sty"
+            unoptimized
           />
         </div>
 
         <div className="text-banner">
-          <h3>{title}</h3>
+          <h3
+            dangerouslySetInnerHTML={{
+              __html: title,
+            }}
+          />
 
           <p>{shortDescription}</p>
         </div>

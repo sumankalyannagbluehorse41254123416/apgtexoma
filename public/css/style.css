@@ -25,7 +25,7 @@ Version: 1.0.0
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    width: 1300px;
+    max-width: 1300px;
 }
 
 #menu-item-105 span {
@@ -92,7 +92,8 @@ body {
 
 .center-body {
     margin: 0 auto;
-    width: 1300px;
+    max-width: 1300px;
+    width: 100%;
 }
 
 .current_page_item {
@@ -221,6 +222,9 @@ body {
 
 
 }
+.navbar{
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width: 767px) {
     .list_n {
@@ -339,7 +343,7 @@ body {
 }
 
 .banner {
-    margin-top: 0px;
+      margin-top: 20px;
     position: relative;
 }
 
@@ -656,7 +660,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    width: 1300px;
+    max-width: 1300px;
+    width: 100%;
 }
 
 .opporunity-sty {
@@ -1014,7 +1019,7 @@ color:#337ab7;
 }
 
 .services_box .container p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.7;
     margin: 0 0 15px;
     padding: 0;
@@ -1141,7 +1146,8 @@ Version: 1.0.0
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    width: 1300px;
+    max-width: 1300px;
+    width: 100%;    
 }
 
 #menu-item-105 span {
@@ -1208,7 +1214,7 @@ body.smartEducation {
 
 .center-body {
     margin: 0 auto;
-    width: 1300px;
+    max-width: 1300px;
 }
 
 .top-gap {
@@ -1276,6 +1282,7 @@ body.smartEducation {
 .navbar .navbar-collapse {
     position: relative;
 }
+
 
 .navbar .navbar-collapse .navbar-right>li:last-child {
     padding-left: 22px;
@@ -1435,8 +1442,9 @@ body.smartEducation {
 
 
 .logo-resp {
-    border-radius: 4px;
-    max-width: 60px
+   display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .nav-bar-header {
@@ -1456,13 +1464,22 @@ body.smartEducation {
 }
 
 .banner {
-    margin-top: 0px;
+    margin-top: 20px;
     position: relative;
 }
 
 .banner-sty {
     height: 350px;
     width: 100%;
+}
+@media (max-width :991px){
+    .navbar .navbar-collapse{
+        display :none !important;
+        
+    }
+    .list_n{
+        display :none;
+    }
 }
 
 @media (max-width:768px) {
@@ -1784,6 +1801,7 @@ body.smartEducation {
 .contact_us .wp-block-group .wp-block-columns p {
     padding: 0 !important;
     text-align: left;
+    font-size: 14px;
 }
 
 @media (max-width:768px) {
@@ -1870,7 +1888,8 @@ body.smartEducation {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    width: 1300px;
+    max-width: 1300px;
+    width: 100%;
 }
 
 .opporunity-sty {
@@ -2020,7 +2039,7 @@ color:#337ab7;
 }
 
 .privacy_policy_content h2 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     margin: 20px 0 10px;
 }
@@ -2034,7 +2053,7 @@ color:#337ab7;
 .privacy_policy_content h4,
 .privacy_policy_content p,
 .privacy_policy_content ul li {
-    font-size: 15.5px;
+    font-size: 18px;
     line-height: 25px;
 }
 
@@ -2389,7 +2408,7 @@ color:#337ab7;
 }
 
 .resources_page .left-list-sty ul li a {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .resources_page .center-body h1 {
@@ -2429,7 +2448,7 @@ color:#337ab7;
 }
 .apg_content p{
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 @media (max-width:768px){
     .apg_content p{

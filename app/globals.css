@@ -4262,3 +4262,205 @@
   background: url(/images/headers/circle.png) no-repeat scroll top;
   background-size: 1600px auto;
 }
+/* Desktop */
+/* @media (min-width: 992px) {
+  .hide-menu,
+  .show-menu {
+    display: flex !important;
+  }
+} */
+
+/* Mobile */
+/* @media (max-width: 991px) {
+  .navbar {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+    font-size: 24px;
+    border: 1px solid #999;
+    background: #fff;
+    padding: 4px 12px;
+  }
+
+  .hide-menu {
+    display: none;
+  }
+
+  .show-menu {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .show-menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .show-menu li {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  .show-menu .nav-link {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+} */
+ /* Desktop */
+
+
+
+/*  
+@media (min-width: 992px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex !important;
+    width: 100%;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-menu li {
+    list-style: none;
+    margin: 0 12px;
+  }
+
+  .mobile-menu .nav-link {
+    text-decoration: none;
+  }
+} */
+@media (min-width: 992px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex !important;
+    width: 100%;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-menu li {
+    list-style: none;
+    margin: 0 3px; /* আগে 12px ছিল */
+  }
+
+  .mobile-menu .nav-link {
+    text-decoration: none;
+    padding: 6px 8px !important;
+  }
+}
+/* Mobile */
+@media (max-width: 991px) {
+  .mobile-menu.show-menu{
+    display:flex;
+    justify-content: center;
+  }
+  
+  .navbar {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+    font-size: 24px;
+    border: 1px solid #999;
+    background: #fff;
+    padding: 6px 14px;
+    cursor: pointer;
+  }
+
+  .hide-menu {
+    display: none;
+  }
+
+  .show-menu {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    animation: slideDown 0.3s ease;
+  }
+
+  .show-menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .show-menu li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .show-menu .nav-link {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-decoration: none;
+  }
+
+  .list_n {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}

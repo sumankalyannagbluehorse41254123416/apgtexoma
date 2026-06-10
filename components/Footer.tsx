@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer  opporunity-sty">
       <div className="container1">
         <div className="footer_bottom">
           <p>
