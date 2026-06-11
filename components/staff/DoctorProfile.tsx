@@ -55,7 +55,7 @@ export default function DoctorProfile({
                 marginRight: "0px",
               }}
             >
-              <div className="col-lg-3 col-md-3">
+              <div className="col-xl-3 col-lg-4 col-md-5">
 
                 <div className="two_ptl">
 
@@ -99,7 +99,7 @@ export default function DoctorProfile({
                 </div>
 
               </div>
-              <div className="col-lg-9 col-md-9">
+              <div className="col-xl-9 col-lg-8 col-md-7">
                 {/* ✅ Dynamic Subsection Description */}
                 <div className="patel_details">
 

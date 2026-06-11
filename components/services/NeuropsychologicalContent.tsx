@@ -41,7 +41,7 @@ export default function NeuropsychologicalContent({
       </div>
 
       <div className="services_box">
-        <div className="container">
+        <div className="wraper">
           <div className="row">
             <div
               className="col-sm-12"
