@@ -7,7 +7,9 @@ Version: 1.0.0
 /* @charset "utf-8"; */
 /* CSS Document */
 
-
+html,body{
+    overflow-x: hidden;
+}
 .current_page_item {
     text-decoration: none;
     background-color: #2fbbf5;
@@ -459,14 +461,19 @@ body {
 
 }
 
+@media (max-width:991px) {
+    .logo-resp {
+        width: 26% !important;
+        float: inline-start;
+        margin-top: unset !important;
+    }
+}
+
 @media screen and (max-width: 767px) {
 
     .logo-resp {
         display: block;
-
         text-align: center;
-
-
     }
 
     .icon-lg {
@@ -1116,8 +1123,16 @@ color:#337ab7;
     color: #656565;
     letter-spacing: 1px;
     padding-left: 55px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    min-width: 0;
 }
-
+@media (max-width:768px){
+    .nwwwe ul{
+        padding:35px;
+    }
+}
 .bg_new {
 
     background-color: #F8F8F8;
