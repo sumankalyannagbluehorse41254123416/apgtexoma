@@ -1,52 +1,70 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Header() {
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 992);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleMenuClose = () => {
+    setIsOpen(false);
+  };
 
   return (
-    <header className="bg-light main_top_header">
-      <div className="t_hrader">
-        {/* Your header content goes here */}
-      </div>
+    <header className="container-fluid main_top_header wraper">
+      <div className="t_hrader"></div>
 
       <div className="icon-social icon-lg"></div>
 
-      <nav className="bg-light navbar navbar-expand-lg navbar-light wraper container-fluid navbar navbar-expand-lg navbar-light wraper container-fluid">
-        <Link href="/apg">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        {/* Logo */}
+        <Link href="/" onClick={handleMenuClose}>
           <Image
             src="/images/rsz_275587-3-03.png"
             alt="Logo"
             width={179}
             height={157}
             className="img-responsive logo-resp"
-            priority
+            unoptimized
           />
         </Link>
 
+        {/* Hamburger Button */}
         <button
-          className="navbar-toggler"
           type="button"
-          aria-label="Toggle navigation"
-          onClick={() => setOpen(!open)}
+          className="navbar-toggler"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          ☰
         </button>
 
+        {/* Navigation Menu */}
         <div
-          className={`collapse navbar-collapse ${open ? "show" : ""}`}
-          id="navbarNavAltMarkup"
+          className={`mobile-menu ${
+            isDesktop ? "collapse navbar-collapse" : ""
+          } ${isOpen ? "show-menu" : "hide-menu"}`}
         >
-          <div className="navbar-nav ms-auto" id="topManu">
+          <div className="navbar-nav" id="topManu">
             <ul className="nav navbar-nav">
               <li>
                 <Link
-                  className="nav-item nav-link"
-                  id="Home-top"
                   href="/apg"
+                  className="nav-item nav-link"
+                  onClick={handleMenuClose}
                 >
                   APG
                 </Link>
@@ -54,9 +72,9 @@ export default function Header() {
 
               <li>
                 <Link
-                  className="nav-item nav-link"
-                  id="Services-top"
                   href="/services"
+                  className="nav-item nav-link"
+                  onClick={handleMenuClose}
                 >
                   SERVICES
                 </Link>
@@ -64,9 +82,9 @@ export default function Header() {
 
               <li>
                 <Link
-                  className="nav-item nav-link"
-                  id="Resorces-top"
                   href="/resorces"
+                  className="nav-item nav-link"
+                  onClick={handleMenuClose}
                 >
                   RESOURCES
                 </Link>
@@ -74,9 +92,9 @@ export default function Header() {
 
               <li>
                 <Link
-                  className="nav-item nav-link"
-                  id="staff-top"
                   href="/staff"
+                  className="nav-item nav-link"
+                  onClick={handleMenuClose}
                 >
                   STAFF
                 </Link>
@@ -84,9 +102,9 @@ export default function Header() {
 
               <li>
                 <Link
-                  className="nav-item nav-link"
-                  id="contact-us-top"
                   href="/contact-us"
+                  className="nav-item nav-link"
+                  onClick={handleMenuClose}
                 >
                   CONTACT
                 </Link>
@@ -94,10 +112,12 @@ export default function Header() {
             </ul>
           </div>
         </div>
-
+        {/* Phone Number */}
         <ul className="list_n">
           <li>
-            <i className="fa fa-mobile" aria-hidden="true"></i> 903-893-0298
+            <a href="tel:+19038930298" className="phone-link">
+              <i className="fa fa-mobile" aria-hidden="true"></i> 903-893-0298
+            </a>
           </li>
         </ul>
       </nav>

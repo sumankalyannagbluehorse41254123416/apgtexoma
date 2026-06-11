@@ -54,7 +54,7 @@ export default async function Services() {
         shortDescription={stripHtml(serviceSection?.shortDescription || "")}
         image={serviceSection?.image || ""}
       />
-   <NeuropsychologicalContent sections={sections} />
+      <NeuropsychologicalContent sections={sections} />
     </>
   );
 }

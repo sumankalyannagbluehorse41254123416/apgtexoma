@@ -59,13 +59,13 @@ export default async function PrivacyPolicyPage() {
 
   return (
     <>
-      <PrivacyBanner
+      {/* <PrivacyBanner
         title={sections[0]?.title || ""}
         shortDescription={stripHtml(
           sections[0]?.shortDescription || "",
         )}
         image={sections[0]?.image || ""}
-      />
+      /> */}
 
     <PrivacyPolicyContaintPage
         sections={sections}
