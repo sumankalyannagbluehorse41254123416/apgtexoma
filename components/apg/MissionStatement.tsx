@@ -15,10 +15,11 @@ export default function MissionStatement({
         <h1>
           {title}
         </h1>
-      </div>
-      <div style={{background:"#f8f8f8", padding:"25px 0 40px"}}>
-        <div className="container">
-          <p>{shortDescription}</p>
+
+        <div style={{ padding: "25px 0 0px" }}>
+          <div className="">
+            <p>{shortDescription}</p>
+          </div>
         </div>
       </div>
     </div >

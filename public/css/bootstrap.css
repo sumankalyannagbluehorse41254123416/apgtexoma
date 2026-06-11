@@ -4404,7 +4404,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 @media (max-width:768px){
   .navbar-nav > li{
-    padding-left: 0 !important;
+    padding-left: 0 !important ;
   }
 }
 .navbar-form {
